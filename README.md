@@ -16,23 +16,24 @@ npm run build    # Build nach dist/ (kopiert public/ mit)
 - `src/data/explanations.js` – Erklärungen
 - `src/data/questions.js`, `matchingTable.js` – Fragen und Matching-Logik
 - `public/audio/` – alle Audiodateien (`.m4a`)
-- `public/audio/Uebungsbibliothek_Mapping_V.4.xlsx` – Übungsbibliothek (Quelle der Wahrheit für Titel/IDs)
+- `docs/Uebungsbibliothek_Mapping_V.4.xlsx` – Übungsbibliothek (Quelle der Wahrheit für Titel/IDs)
 - `fehlende-audios.md` – Liste der Audios, die noch fehlen
 
-## Audio-Dateien
+## Audio-Dateien (so werden neue Audios live)
 
-Benennung: `av<Avatar>-ueb-<Nr>.m4a` (Übung) und `av<Avatar>-erkl-<Nr>.m4a` (Erklärung), z. B. `av3-ueb-6.m4a`.
+Lege die Datei in `public/audio/` ab, mit **genau** diesem Namen (alles klein, Endung `.m4a`):
 
-Stand:
-
-| Avatar | Übungen | Erklärungen |
+| Was | Name | Beispiel |
 |---|---|---|
-| 1, 2 | 30/30 | 30/30 |
-| 3, 4, 5 | 5/30 (liegen noch in `Avatar_X_alle_…/` als `AVX-UeB-n.m4a` / `AVX-E-n.m4a`) | 5/30 |
+| Übung | `av<Avatar 1-5>-ueb-<Nr 1-30>.m4a` | `av3-ueb-6.m4a` |
+| Erklärung | `av<Avatar 1-5>-erkl-<Nr 1-30>.m4a` | `av4-erkl-12.m4a` |
 
-**Audio hinzufügen:**
-1. Datei als `.m4a` exakt wie oben benennen und nach `public/audio/` legen.
-2. In `src/data/exercises.js` prüfen, dass der `audio`-Pfad der Übung auf die Datei zeigt (für Avatar 3–5 Übung 6–30 zeigen die Pfade schon auf `/audio/av<N>-ueb-<Nr>.m4a`).
-3. Eintrag in `fehlende-audios.md` streichen, committen, Pull Request öffnen.
+Mehr ist nicht nötig: Beim nächsten Build erkennt `scripts/generate-audio-manifest.mjs` die Datei automatisch, die Übung wird freigeschaltet und im Matching berücksichtigt. Die Nummer entspricht der ID in `docs/Uebungsbibliothek_Mapping_V.4.xlsx`.
 
-Offene Punkte: Avatar 3–5 haben für Nr. 6–30 noch keine Audios (150 Stück); die 5 vorhandenen pro Typ liegen in Unterordnern und könnten auf das einheitliche Namensschema umbenannt werden.
+Falsch benannte Dateien werden nicht erkannt. `npm run check:audio` listet sie auf; beim Build erscheint eine Warnung im Log.
+
+Stand: Avatar 1 und 2 komplett (30/30 Übungen, 30/30 Erklärungen). Avatar 3, 4, 5: je 5/30 – siehe `fehlende-audios.md`.
+
+## Weitere Ordner
+
+- `docs/` – Mapping-Excel und Master-PDFs der Avatare

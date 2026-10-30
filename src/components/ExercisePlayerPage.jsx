@@ -66,21 +66,15 @@ const ExercisePlayerPage = ({ type, id, avatar = 1, onBackToSurvey }) => {
     } else if (avatar === 3) {
       titles = explanationTitles3;
       descriptions = explanationDescriptions3;
-      audioPath = id <= 5
-        ? `/audio/Avatar_3_alle_Erklaerungen/AV3-E-${id}.m4a`
-        : `/audio/av3-erkl-${id}.m4a`;
+      audioPath = `/audio/av${avatar}-erkl-${id}.m4a`;
     } else if (avatar === 4) {
       titles = explanationTitles4;
       descriptions = explanationDescriptions4;
-      audioPath = id <= 5
-        ? `/audio/Avatar_4_alle_Erklaerungen/AV4-E-${id}.m4a`
-        : `/audio/av4-erkl-${id}.m4a`;
+      audioPath = `/audio/av${avatar}-erkl-${id}.m4a`;
     } else if (avatar === 5) {
       titles = explanationTitles5;
       descriptions = explanationDescriptions5;
-      audioPath = id <= 5
-        ? `/audio/Avatar_5_alle_Erklaerungen/AV5-E-${id}.m4a`
-        : `/audio/av5-erkl-${id}.m4a`;
+      audioPath = `/audio/av${avatar}-erkl-${id}.m4a`;
     }
 
     const title = titles[id];

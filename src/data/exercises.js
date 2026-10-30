@@ -1,3 +1,7 @@
+import audioManifest from "./audioManifest.json";
+
+const audioFiles = new Set(audioManifest);
+
 export const exercises = [
   // ================= AVATAR 1 (Liebe & Beziehung) =================
   {
@@ -789,7 +793,7 @@ export const exercises = [
   {
     id: 1,
     avatar: 3,
-    audio: "/audio/Avatar_3_alle_Uebungen/AV3-UeB-1.m4a",
+    audio: "/audio/av3-ueb-1.m4a",
     titel: "Ich komme aus dem Funktionieren zurück in meinen Körper",
     typ: "Beruhigung",
     zustaende: ['Funktionieren', 'Druck'],
@@ -802,7 +806,7 @@ export const exercises = [
   {
     id: 2,
     avatar: 3,
-    audio: "/audio/Avatar_3_alle_Uebungen/AV3-UeB-2.m4a",
+    audio: "/audio/av3-ueb-2.m4a",
     titel: "Ich beruhige den Druck in meinem Brustraum",
     typ: "Beruhigung",
     zustaende: ['Druck', 'Enge'],
@@ -815,7 +819,7 @@ export const exercises = [
   {
     id: 3,
     avatar: 3,
-    audio: "/audio/Avatar_3_alle_Uebungen/AV3-UeB-3.m4a",
+    audio: "/audio/av3-ueb-3.m4a",
     titel: "Ich löse Spannung aus meinem Kiefer",
     typ: "Loslassen",
     zustaende: ['Kontrolle', 'Anspannung'],
@@ -828,7 +832,7 @@ export const exercises = [
   {
     id: 4,
     avatar: 3,
-    audio: "/audio/Avatar_3_alle_Uebungen/AV3-UeB-4.m4a",
+    audio: "/audio/av3-ueb-4.m4a",
     titel: "Ich finde Klarheit statt Rückzug",
     typ: "Klarheit",
     zustaende: ['Rückzug', 'Verwirrung'],
@@ -841,7 +845,7 @@ export const exercises = [
   {
     id: 5,
     avatar: 3,
-    audio: "/audio/Avatar_3_alle_Uebungen/AV3-UeB-5.m4a",
+    audio: "/audio/av3-ueb-5.m4a",
     titel: "Ich bleibe präsent, auch wenn es emotional wird",
     typ: "Präsenz",
     zustaende: ['Überforderung', 'Näheangst'],
@@ -863,7 +867,6 @@ export const exercises = [
     zusammenfassung: "Schuldgefühle körperlich wahrnehmen und über den Atem lösen",
     ziel: "Selbstverurteilung reduzieren und inneren Frieden fördern",
     cluster: "cluster_schuld-scham"
-    ,audioAvailable: false
   },
   {
     id: 7,
@@ -877,7 +880,6 @@ export const exercises = [
     zusammenfassung: "Scham im Körper begegnen und sanft regulieren",
     ziel: "Innere Würde und Selbstannahme stärken",
     cluster: "cluster_schuld-scham"
-    ,audioAvailable: false
   },
   {
     id: 8,
@@ -891,7 +893,6 @@ export const exercises = [
     zusammenfassung: "Herzraum wahrnehmen und gleichzeitig bei sich bleiben",
     ziel: "Verletzlichkeit sicherer halten lernen",
     cluster: "cluster_herz-verbindung"
-    ,audioAvailable: false
   },
   {
     id: 9,
@@ -905,7 +906,6 @@ export const exercises = [
     zusammenfassung: "Männliche Kraft über Füsse, Becken und Atem stabilisieren",
     ziel: "Kraft in Ruhe und Boden verankern",
     cluster: "cluster_kraft-erdung"
-    ,audioAvailable: false
   },
   {
     id: 10,
@@ -919,7 +919,6 @@ export const exercises = [
     zusammenfassung: "Wahrheit im Körper spüren und ruhig ausdrücken",
     ziel: "Authentischen Ausdruck ohne Druck stärken",
     cluster: "cluster_wahrheit-klarheit"
-    ,audioAvailable: false
   },
   {
     id: 11,
@@ -933,7 +932,6 @@ export const exercises = [
     zusammenfassung: "Bei Nähe oder Spannung im Körper bleiben",
     ziel: "Rückzugsmuster unterbrechen und Verbindung halten",
     cluster: "cluster_rueckzug-praesenz"
-    ,audioAvailable: false
   },
   {
     id: 12,
@@ -947,7 +945,6 @@ export const exercises = [
     zusammenfassung: "Vor Gesprächen Nervensystem beruhigen und ausrichten",
     ziel: "Sicher und klarer kommunizieren",
     cluster: "cluster_wahrheit-klarheit"
-    ,audioAvailable: false
   },
   {
     id: 13,
@@ -961,7 +958,6 @@ export const exercises = [
     zusammenfassung: "Gestaute Wut sicher über Körper und Atem entladen",
     ziel: "Kraft freisetzen, ohne destruktiv zu reagieren",
     cluster: "cluster_kraft-erdung"
-    ,audioAvailable: false
   },
   {
     id: 14,
@@ -975,7 +971,6 @@ export const exercises = [
     zusammenfassung: "Kiefer, Herz und Becken bewusst miteinander verbinden",
     ziel: "Ganzkörperliche Klarheit und innere Verbindung stärken",
     cluster: "cluster_kraft-erdung"
-    ,audioAvailable: false
   },
   {
     id: 15,
@@ -989,7 +984,6 @@ export const exercises = [
     zusammenfassung: "Alte Last des Allein-Tragens im Körper wahrnehmen und lösen",
     ziel: "Innere Entlastung und Offenheit für Unterstützung fördern",
     cluster: "cluster_schuld-scham"
-    ,audioAvailable: false
   },
   {
     id: 16,
@@ -1003,7 +997,6 @@ export const exercises = [
     zusammenfassung: "Verantwortung im Körper halten, ohne in Druck zu gehen",
     ziel: "Ruhige Führungsenergie und Stabilität aufbauen",
     cluster: "cluster_funktionieren-druck"
-    ,audioAvailable: false
   },
   {
     id: 17,
@@ -1017,7 +1010,6 @@ export const exercises = [
     zusammenfassung: "Gegensätzliche innere Impulse sortieren und ausrichten",
     ziel: "Ruhige Richtung und Entscheidungsfähigkeit stärken",
     cluster: "cluster_wahrheit-klarheit"
-    ,audioAvailable: false
   },
   {
     id: 18,
@@ -1031,7 +1023,6 @@ export const exercises = [
     zusammenfassung: "Nähe körperlich zulassen, ohne sich zu verlieren",
     ziel: "Beziehungsfähigkeit und emotionale Kapazität stärken",
     cluster: "cluster_herz-verbindung"
-    ,audioAvailable: false
   },
   {
     id: 19,
@@ -1045,7 +1036,6 @@ export const exercises = [
     zusammenfassung: "Angst vor Verletzlichkeit wahrnehmen und beruhigen",
     ziel: "Weichheit und Stärke miteinander verbinden",
     cluster: "cluster_schuld-scham"
-    ,audioAvailable: false
   },
   {
     id: 20,
@@ -1059,7 +1049,6 @@ export const exercises = [
     zusammenfassung: "Becken orten und Präsenz im Körper verankern",
     ziel: "Männliche Sicherheit und Standfestigkeit stärken",
     cluster: "cluster_kraft-erdung"
-    ,audioAvailable: false
   },
   {
     id: 21,
@@ -1073,7 +1062,6 @@ export const exercises = [
     zusammenfassung: "Abspaltung wahrnehmen und zurück in Selbstkontakt finden",
     ziel: "Gefühle wieder sicherer zulassen",
     cluster: "cluster_rueckzug-praesenz"
-    ,audioAvailable: false
   },
   {
     id: 22,
@@ -1087,7 +1075,6 @@ export const exercises = [
     zusammenfassung: "Nach Rückzug wieder sanft in den Körper zurückkommen",
     ziel: "Verbindung wiederherstellen, ohne Druck aufzubauen",
     cluster: "cluster_rueckzug-praesenz"
-    ,audioAvailable: false
   },
   {
     id: 23,
@@ -1101,7 +1088,6 @@ export const exercises = [
     zusammenfassung: "Geschütztes Herz wahrnehmen und vorsichtig öffnen",
     ziel: "Zugang zu Gefühl und innerer Wärme stärken",
     cluster: "cluster_herz-verbindung"
-    ,audioAvailable: false
   },
   {
     id: 24,
@@ -1115,7 +1101,6 @@ export const exercises = [
     zusammenfassung: "Verantwortung abgekoppelt von Schuld übernehmen",
     ziel: "Reife Selbstführung ohne Härte entwickeln",
     cluster: "cluster_schuld-scham"
-    ,audioAvailable: false
   },
   {
     id: 25,
@@ -1129,7 +1114,6 @@ export const exercises = [
     zusammenfassung: "Gedanken beruhigen und mehr Wahrheit im Körper spüren",
     ziel: "Klarheit jenseits von Analyse stärken",
     cluster: "cluster_wahrheit-klarheit"
-    ,audioAvailable: false
   },
   {
     id: 26,
@@ -1143,7 +1127,6 @@ export const exercises = [
     zusammenfassung: "Sexuellen Druck und Erwartungsspannung körperlich regulieren",
     ziel: "Entspannung, Präsenz und Natürlichkeit fördern",
     cluster: "cluster_kraft-erdung"
-    ,audioAvailable: false
   },
   {
     id: 27,
@@ -1157,7 +1140,6 @@ export const exercises = [
     zusammenfassung: "Sehnsucht nach Nähe halten, ohne sie wegzudrücken",
     ziel: "Innere Bindung und ehrlichen Kontakt zur Sehnsucht fördern",
     cluster: "cluster_herz-verbindung"
-    ,audioAvailable: false
   },
   {
     id: 28,
@@ -1171,7 +1153,6 @@ export const exercises = [
     zusammenfassung: "Klare Ausrichtung mit weichem Körper verbinden",
     ziel: "Grenzen und Wahrheit ohne Härte verkörpern",
     cluster: "cluster_wahrheit-klarheit"
-    ,audioAvailable: false
   },
   {
     id: 29,
@@ -1185,7 +1166,6 @@ export const exercises = [
     zusammenfassung: "Innere Führung über Körper, Herz und ruhige Ausrichtung wahrnehmen",
     ziel: "Selbstführung und Vertrauen in den nächsten Schritt stärken",
     cluster: "cluster_funktionieren-druck"
-    ,audioAvailable: false
   },
   {
     id: 30,
@@ -1199,13 +1179,12 @@ export const exercises = [
     zusammenfassung: "Wahrheit nicht nur denken, sondern im Körper verkörpern",
     ziel: "Männliche Stärke über Wahrheit und Präsenz verankern",
     cluster: "cluster_wahrheit-klarheit"
-    ,audioAvailable: false
   },
   // ================= AVATAR 4 (Familie & Kinder) =================
   {
     id: 1,
     avatar: 4,
-    audio: "/audio/Avatar_4_alle_Uebungen/AV4-UeB-1.m4a",
+    audio: "/audio/av4-ueb-1.m4a",
     titel: "Ich beruhige mich, bevor ich reagiere",
     typ: "Beruhigung",
     zustaende: ['Reizbarkeit', 'Stress'],
@@ -1218,7 +1197,7 @@ export const exercises = [
   {
     id: 2,
     avatar: 4,
-    audio: "/audio/Avatar_4_alle_Uebungen/AV4-UeB-2.m4a",
+    audio: "/audio/av4-ueb-2.m4a",
     titel: "Ich komme aus Schuldgefühlen zurück in Präsenz",
     typ: "Selbstbindung",
     zustaende: ['Schuld', 'Selbstvorwurf'],
@@ -1231,7 +1210,7 @@ export const exercises = [
   {
     id: 3,
     avatar: 4,
-    audio: "/audio/Avatar_4_alle_Uebungen/AV4-UeB-3.m4a",
+    audio: "/audio/av4-ueb-3.m4a",
     titel: "Ich halte mein Kind, ohne mich selbst zu verlieren",
     typ: "Co-Regulation",
     zustaende: ['Überforderung', 'Sorgen'],
@@ -1244,7 +1223,7 @@ export const exercises = [
   {
     id: 4,
     avatar: 4,
-    audio: "/audio/Avatar_4_alle_Uebungen/AV4-UeB-4.m4a",
+    audio: "/audio/av4-ueb-4.m4a",
     titel: "Ich löse Überforderung aus meinem Körper",
     typ: "Loslassen",
     zustaende: ['Überforderung', 'Druck'],
@@ -1257,7 +1236,7 @@ export const exercises = [
   {
     id: 5,
     avatar: 4,
-    audio: "/audio/Avatar_4_alle_Uebungen/AV4-UeB-5.m4a",
+    audio: "/audio/av4-ueb-5.m4a",
     titel: "Ich finde Ruhe im Familienchaos",
     typ: "Beruhigung",
     zustaende: ['Unruhe', 'Chaos'],
@@ -1279,7 +1258,6 @@ export const exercises = [
     zusammenfassung: "Kontrollspannung über Atem und Körperkontakt lösen",
     ziel: "Mehr Vertrauen und weniger Kontrollimpulse entwickeln",
     cluster: "cluster_grenzen-klarheit"
-    ,audioAvailable: false
   },
   {
     id: 7,
@@ -1293,7 +1271,6 @@ export const exercises = [
     zusammenfassung: "Weichheit und klare innere Ausrichtung verbinden",
     ziel: "Grenzen setzen ohne Härte",
     cluster: "cluster_grenzen-klarheit"
-    ,audioAvailable: false
   },
   {
     id: 8,
@@ -1307,7 +1284,6 @@ export const exercises = [
     zusammenfassung: "Nach Streit oder emotionaler Aktivierung wieder Boden spüren",
     ziel: "Familiäre Rückverbindung und innere Ruhe fördern",
     cluster: "cluster_elternkraft-erdung"
-    ,audioAvailable: false
   },
   {
     id: 9,
@@ -1321,7 +1297,6 @@ export const exercises = [
     zusammenfassung: "Kindliche Wut halten, ohne selbst in Alarm zu gehen",
     ziel: "Präsenz bei starken Gefühlen des Kindes stärken",
     cluster: "cluster_coregulation-kinderwut"
-    ,audioAvailable: false
   },
   {
     id: 10,
@@ -1335,7 +1310,6 @@ export const exercises = [
     zusammenfassung: "Kiefer entspannen und elterliches Grübeln entlasten",
     ziel: "Gedanken beruhigen und körperliche Spannung lösen",
     cluster: "cluster_familienalltag-beruhigung"
-    ,audioAvailable: false
   },
   {
     id: 11,
@@ -1349,7 +1323,6 @@ export const exercises = [
     zusammenfassung: "Aus Hilflosigkeit zurück in erwachsene innere Führung kommen",
     ziel: "Elternkraft und Selbstvertrauen stärken",
     cluster: "cluster_elternkraft-erdung"
-    ,audioAvailable: false
   },
   {
     id: 12,
@@ -1363,7 +1336,6 @@ export const exercises = [
     zusammenfassung: "Grosse Gefühle des Kindes begleiten, ohne sie wegzumachen",
     ziel: "Emotionale Sicherheit und Bindung stärken",
     cluster: "cluster_coregulation-kinderwut"
-    ,audioAvailable: false
   },
   {
     id: 13,
@@ -1377,7 +1349,6 @@ export const exercises = [
     zusammenfassung: "Druck rund um Schule, Termine und Organisation regulieren",
     ziel: "Mehr Ruhe und Orientierung im Alltag schaffen",
     cluster: "cluster_familienalltag-beruhigung"
-    ,audioAvailable: false
   },
   {
     id: 14,
@@ -1391,7 +1362,6 @@ export const exercises = [
     zusammenfassung: "Den inneren Anspruch an perfekte Elternschaft weicher werden lassen",
     ziel: "Selbstannahme und familiäre Entspannung fördern",
     cluster: "cluster_schuld-selbstannahme"
-    ,audioAvailable: false
   },
   {
     id: 15,
@@ -1405,7 +1375,6 @@ export const exercises = [
     zusammenfassung: "Stimme, Atem und Körper als regulierenden Halt nutzen",
     ziel: "Eine ruhige, klare Stimme im Familienfeld stärken",
     cluster: "cluster_grenzen-klarheit"
-    ,audioAvailable: false
   },
   {
     id: 16,
@@ -1419,7 +1388,6 @@ export const exercises = [
     zusammenfassung: "Aus innerer Ohnmacht zurück zu einem nächsten kleinen Schritt",
     ziel: "Handlungsfähigkeit und innere Orientierung aufbauen",
     cluster: "cluster_grenzen-klarheit"
-    ,audioAvailable: false
   },
   {
     id: 17,
@@ -1433,7 +1401,6 @@ export const exercises = [
     zusammenfassung: "Vor einem wichtigen Gespräch erst den eigenen Zustand regulieren",
     ziel: "Gespräche aus Ruhe und Verbindung ermöglichen",
     cluster: "cluster_familienalltag-beruhigung"
-    ,audioAvailable: false
   },
   {
     id: 18,
@@ -1447,7 +1414,6 @@ export const exercises = [
     zusammenfassung: "Gesammelte Spannung nach einem vollen Familientag entladen",
     ziel: "Körperliche und emotionale Entlastung fördern",
     cluster: "cluster_elternkraft-erdung"
-    ,audioAvailable: false
   },
   {
     id: 19,
@@ -1461,7 +1427,6 @@ export const exercises = [
     zusammenfassung: "Liebe im Herzen mit Erdung und Stabilität im Becken verbinden",
     ziel: "Liebevolle Präsenz ohne Erschöpfung stärken",
     cluster: "cluster_elternkraft-erdung"
-    ,audioAvailable: false
   },
   {
     id: 20,
@@ -1475,7 +1440,6 @@ export const exercises = [
     zusammenfassung: "Grenzen körperlich spüren und ruhig ausdrücken",
     ziel: "Klare Grenzen als Sicherheit erfahrbar machen",
     cluster: "cluster_grenzen-klarheit"
-    ,audioAvailable: false
   },
   {
     id: 21,
@@ -1489,7 +1453,6 @@ export const exercises = [
     zusammenfassung: "Aktivierung bei Widerstand oder Nicht-Hören des Kindes regulieren",
     ziel: "Reaktionsmuster unterbrechen und Selbstführung stärken",
     cluster: "cluster_coregulation-kinderwut"
-    ,audioAvailable: false
   },
   {
     id: 22,
@@ -1503,7 +1466,6 @@ export const exercises = [
     zusammenfassung: "Vom Machen und Korrigieren zurück in echte Beziehung kommen",
     ziel: "Verbindung statt Kontrollmodus fördern",
     cluster: "cluster_schuld-selbstannahme"
-    ,audioAvailable: false
   },
   {
     id: 23,
@@ -1517,7 +1479,6 @@ export const exercises = [
     zusammenfassung: "Den eigenen Körper als Quelle von Sicherheit im Zuhause nutzen",
     ziel: "Mehr Geborgenheit und Ruhe im Familiensystem erzeugen",
     cluster: "cluster_sicherheit-zuhause"
-    ,audioAvailable: false
   },
   {
     id: 24,
@@ -1531,7 +1492,6 @@ export const exercises = [
     zusammenfassung: "Angst vor Fehlern wahrnehmen und regulieren",
     ziel: "Mehr Vertrauen in die eigene Elternrolle entwickeln",
     cluster: "cluster_schuld-selbstannahme"
-    ,audioAvailable: false
   },
   {
     id: 25,
@@ -1545,7 +1505,6 @@ export const exercises = [
     zusammenfassung: "Nach Lautwerden oder Ausbruch wieder in Kontakt kommen",
     ziel: "Scham regulieren und Rückverbindung ermöglichen",
     cluster: "cluster_schuld-selbstannahme"
-    ,audioAvailable: false
   },
   {
     id: 26,
@@ -1559,7 +1518,6 @@ export const exercises = [
     zusammenfassung: "Den eigenen Körper als stabilen Anker für das Kind spüren",
     ziel: "Co-Regulation über körperliche Präsenz stärken",
     cluster: "cluster_coregulation-kinderwut"
-    ,audioAvailable: false
   },
   {
     id: 27,
@@ -1573,7 +1531,6 @@ export const exercises = [
     zusammenfassung: "Aktivierung rund um Trennung, Übergaben oder Patchwork regulieren",
     ziel: "Innere Stabilität in herausfordernden Familiensituationen stärken",
     cluster: "cluster_sicherheit-zuhause"
-    ,audioAvailable: false
   },
   {
     id: 28,
@@ -1587,7 +1544,6 @@ export const exercises = [
     zusammenfassung: "Kontrolle lockern und Vertrauen in Prozesse aufbauen",
     ziel: "Mehr Gelassenheit und Vertrauen im Familienfeld entwickeln",
     cluster: "cluster_sicherheit-zuhause"
-    ,audioAvailable: false
   },
   {
     id: 29,
@@ -1601,7 +1557,6 @@ export const exercises = [
     zusammenfassung: "Das Elternherz von Sorgen, Schuld und emotionaler Last entlasten",
     ziel: "Mitgefühl und innere Weichheit stärken",
     cluster: "cluster_elternkraft-erdung"
-    ,audioAvailable: false
   },
   {
     id: 30,
@@ -1615,13 +1570,12 @@ export const exercises = [
     zusammenfassung: "Sicherheit im eigenen Körper spüren und ausstrahlen",
     ziel: "Regulation als Geschenk an das Kind verkörpern",
     cluster: "cluster_sicherheit-zuhause"
-    ,audioAvailable: false
   },
   // ================= AVATAR 5 (Frauen, Weiblichkeit & Gewicht) =================
   {
     id: 1,
     avatar: 5,
-    audio: "/audio/Avatar_5_alle_Uebungen/AV5-UeB-1.m4a",
+    audio: "/audio/av5-ueb-1.m4a",
     titel: "Ich beruhige meinen Körper statt ihn zu bekämpfen",
     typ: "Beruhigung",
     zustaende: ['Scham', 'Selbstkritik'],
@@ -1634,7 +1588,7 @@ export const exercises = [
   {
     id: 2,
     avatar: 5,
-    audio: "/audio/Avatar_5_alle_Uebungen/AV5-UeB-2.m4a",
+    audio: "/audio/av5-ueb-2.m4a",
     titel: "Ich löse Scham aus meinem Körper",
     typ: "Loslassen",
     zustaende: ['Scham', 'Körperstress'],
@@ -1647,7 +1601,7 @@ export const exercises = [
   {
     id: 3,
     avatar: 5,
-    audio: "/audio/Avatar_5_alle_Uebungen/AV5-UeB-3.m4a",
+    audio: "/audio/av5-ueb-3.m4a",
     titel: "Ich finde Frieden mit meinem Essen",
     typ: "Beruhigung",
     zustaende: ['Essensdruck', 'Schuld'],
@@ -1660,7 +1614,7 @@ export const exercises = [
   {
     id: 4,
     avatar: 5,
-    audio: "/audio/Avatar_5_alle_Uebungen/AV5-UeB-4.m4a",
+    audio: "/audio/av5-ueb-4.m4a",
     titel: "Ich komme aus Kontrolle in Körpervertrauen",
     typ: "Körpervertrauen",
     zustaende: ['Kontrolle', 'Unsicherheit'],
@@ -1673,7 +1627,7 @@ export const exercises = [
   {
     id: 5,
     avatar: 5,
-    audio: "/audio/Avatar_5_alle_Uebungen/AV5-UeB-5.m4a",
+    audio: "/audio/av5-ueb-5.m4a",
     titel: "Ich halte den Impuls nach emotionalem Essen",
     typ: "Selbstbindung",
     zustaende: ['Heisshunger', 'Unruhe'],
@@ -1695,7 +1649,6 @@ export const exercises = [
     zusammenfassung: "Über Atem, Bauch und Becken wieder echte Körpersignale wahrnehmen",
     ziel: "Hunger, Sättigung und Bedürfnisse klarer spüren",
     cluster: "cluster_kontrolle-vertrauen"
-    ,audioAvailable: false
   },
   {
     id: 7,
@@ -1709,7 +1662,6 @@ export const exercises = [
     zusammenfassung: "Kritische innere Stimmen wahrnehmen und über den Ausatem entlasten",
     ziel: "Selbstkritik beruhigen und innere Freundlichkeit stärken",
     cluster: "cluster_koerper-scham"
-    ,audioAvailable: false
   },
   {
     id: 8,
@@ -1723,7 +1675,6 @@ export const exercises = [
     zusammenfassung: "Über Beckenraum, Schwere und Atem wieder im Körper ankommen",
     ziel: "Weiblichkeit und Körpervertrauen verkörpern",
     cluster: "cluster_weiblichkeit-verkoerperung"
-    ,audioAvailable: false
   },
   {
     id: 9,
@@ -1737,7 +1688,6 @@ export const exercises = [
     zusammenfassung: "Abnehmdruck im Körper lokalisieren und bewusst weicher werden lassen",
     ziel: "Nervensystem aus Leistungsdruck in Ruhe bringen",
     cluster: "cluster_gewicht-frieden"
-    ,audioAvailable: false
   },
   {
     id: 10,
@@ -1751,7 +1701,6 @@ export const exercises = [
     zusammenfassung: "Vor dem Essen kurz regulieren und den Körper in Kontakt bringen",
     ziel: "Bewusster und verbundener essen",
     cluster: "cluster_essen-regulation"
-    ,audioAvailable: false
   },
   {
     id: 11,
@@ -1765,7 +1714,6 @@ export const exercises = [
     zusammenfassung: "Den Körper vor einer Mahlzeit verlangsamen und Sicherheit herstellen",
     ziel: "Essen aus einem regulierteren Zustand ermöglichen",
     cluster: "cluster_essen-regulation"
-    ,audioAvailable: false
   },
   {
     id: 12,
@@ -1779,7 +1727,6 @@ export const exercises = [
     zusammenfassung: "Nach dem Essen Schuld wahrnehmen und zurück in Selbstkontakt finden",
     ziel: "Schuldspiralen unterbrechen und Würde stärken",
     cluster: "cluster_koerper-scham"
-    ,audioAvailable: false
   },
   {
     id: 13,
@@ -1793,7 +1740,6 @@ export const exercises = [
     zusammenfassung: "Dem Körper zeigen, dass er nicht mehr kämpfen oder schützen muss",
     ziel: "Sicherheitsgefühl im Körper aufbauen",
     cluster: "cluster_kontrolle-vertrauen"
-    ,audioAvailable: false
   },
   {
     id: 14,
@@ -1807,7 +1753,6 @@ export const exercises = [
     zusammenfassung: "Genuss als sichere Körpererfahrung zulassen, ohne in Angst zu gehen",
     ziel: "Genuss und Kontrolle neu im Nervensystem verankern",
     cluster: "cluster_weiblichkeit-verkoerperung"
-    ,audioAvailable: false
   },
   {
     id: 15,
@@ -1821,7 +1766,6 @@ export const exercises = [
     zusammenfassung: "Den inneren Kampf wahrnehmen, halten und über den Körper entlasten",
     ziel: "Selbstkampf beenden und Frieden ermöglichen",
     cluster: "cluster_gewicht-frieden"
-    ,audioAvailable: false
   },
   {
     id: 16,
@@ -1835,7 +1779,6 @@ export const exercises = [
     zusammenfassung: "Nach einem alten Muster nicht in Verurteilung fallen, sondern sich selbst halten",
     ziel: "Rückfälle regulieren und Selbstbindung stärken",
     cluster: "cluster_essen-regulation"
-    ,audioAvailable: false
   },
   {
     id: 17,
@@ -1849,7 +1792,6 @@ export const exercises = [
     zusammenfassung: "Weiblichkeit über Herz, Becken und Atem spüren statt leisten",
     ziel: "Weibliche Präsenz von Gewicht und Leistung lösen",
     cluster: "cluster_weiblichkeit-verkoerperung"
-    ,audioAvailable: false
   },
   {
     id: 18,
@@ -1863,7 +1805,6 @@ export const exercises = [
     zusammenfassung: "Alte Diätspannung aus Kopf, Kiefer und Körper entladen",
     ziel: "Diätstress lösen und Körpervertrauen öffnen",
     cluster: "cluster_kontrolle-vertrauen"
-    ,audioAvailable: false
   },
   {
     id: 19,
@@ -1877,7 +1818,6 @@ export const exercises = [
     zusammenfassung: "Über Handkontakt und Atem den Bauchraum beruhigen",
     ziel: "Bauch als sicheren Körperraum erleben",
     cluster: "cluster_koerper-annahme"
-    ,audioAvailable: false
   },
   {
     id: 20,
@@ -1891,7 +1831,6 @@ export const exercises = [
     zusammenfassung: "Vergleichsenergie wahrnehmen und zurück in den eigenen Körper kommen",
     ziel: "Körpervergleich regulieren und Selbstwert stabilisieren",
     cluster: "cluster_koerper-scham"
-    ,audioAvailable: false
   },
   {
     id: 21,
@@ -1905,7 +1844,6 @@ export const exercises = [
     zusammenfassung: "Den Körper nicht optimieren, sondern über Berührung und Atem wieder annehmen",
     ziel: "Selbstannahme im Körper stärken",
     cluster: "cluster_koerper-annahme"
-    ,audioAvailable: false
   },
   {
     id: 22,
@@ -1919,7 +1857,6 @@ export const exercises = [
     zusammenfassung: "Kontrollangst körperlich wahrnehmen und sanft entladen",
     ziel: "Mehr Sicherheit ohne Kontrolle entwickeln",
     cluster: "cluster_kontrolle-vertrauen"
-    ,audioAvailable: false
   },
   {
     id: 23,
@@ -1933,7 +1870,6 @@ export const exercises = [
     zusammenfassung: "Hunger- und Sättigungssignale liebevoll wahrnehmen lernen",
     ziel: "Natürliche Körpersignale stärken",
     cluster: "cluster_essen-regulation"
-    ,audioAvailable: false
   },
   {
     id: 24,
@@ -1947,7 +1883,6 @@ export const exercises = [
     zusammenfassung: "Disziplin von Härte entkoppeln und als liebevolle Führung spüren",
     ziel: "Selbstführung ohne Selbstkampf aufbauen",
     cluster: "cluster_gewicht-frieden"
-    ,audioAvailable: false
   },
   {
     id: 25,
@@ -1961,7 +1896,6 @@ export const exercises = [
     zusammenfassung: "Dem Körper erlauben, Spannung, Schutz und Festhalten langsam abzugeben",
     ziel: "Loslassen aus Sicherheit statt Druck ermöglichen",
     cluster: "cluster_gewicht-frieden"
-    ,audioAvailable: false
   },
   {
     id: 26,
@@ -1975,7 +1909,6 @@ export const exercises = [
     zusammenfassung: "Leichtigkeit als kleine Körpererfahrung zulassen und im System verankern",
     ziel: "Mehr Freude und Weite im Körper ermöglichen",
     cluster: "cluster_weiblichkeit-verkoerperung"
-    ,audioAvailable: false
   },
   {
     id: 27,
@@ -1989,7 +1922,6 @@ export const exercises = [
     zusammenfassung: "Den Blick auf den Körper mit Herz, Mitgefühl und Würde verbinden",
     ziel: "Körperbild sanfter und liebevoller erleben",
     cluster: "cluster_koerper-annahme"
-    ,audioAvailable: false
   },
   {
     id: 28,
@@ -2003,7 +1935,6 @@ export const exercises = [
     zusammenfassung: "Unwohlsein nicht wegdrücken, sondern sich selbst darin halten",
     ziel: "Selbstkontakt in schwierigen Körpermomenten stärken",
     cluster: "cluster_koerper-annahme"
-    ,audioAvailable: false
   },
   {
     id: 29,
@@ -2017,7 +1948,6 @@ export const exercises = [
     zusammenfassung: "Weiblichkeit nicht auf später verschieben, sondern jetzt körperlich spüren",
     ziel: "Weiblichkeit im aktuellen Körper erlauben",
     cluster: "cluster_weiblichkeit-verkoerperung"
-    ,audioAvailable: false
   },
   {
     id: 30,
@@ -2031,6 +1961,9 @@ export const exercises = [
     zusammenfassung: "Über Atem, Hände und innere Sätze das Vertrauen zum Körper neu aufbauen",
     ziel: "Körpervertrauen als Grundlage für Veränderung stärken",
     cluster: "cluster_kontrolle-vertrauen"
-    ,audioAvailable: false
   },
-];
+].map((ex) => ({
+  ...ex,
+  // true, sobald die Datei in public/audio liegt (siehe scripts/generate-audio-manifest.mjs)
+  audioAvailable: audioFiles.has(ex.audio.split("/").pop()),
+}));

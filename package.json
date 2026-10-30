@@ -7,7 +7,10 @@
     "dev": "vite",
     "build": "vite build && cp -R public/* dist/",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "check:audio": "node scripts/generate-audio-manifest.mjs --strict",
+    "predev": "node scripts/generate-audio-manifest.mjs",
+    "prebuild": "node scripts/generate-audio-manifest.mjs"
   },
   "dependencies": {
     "@tailwindcss/postcss": "^4.3.0",

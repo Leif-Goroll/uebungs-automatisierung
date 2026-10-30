@@ -27,3 +27,6 @@ dist-ssr
 local_page*.png
 .netlify
 .env*
+
+# automatisch erzeugt (npm run dev/build)
+src/data/audioManifest.json
