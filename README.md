@@ -37,3 +37,5 @@ Stand: Avatar 1 und 2 komplett (30/30 Übungen, 30/30 Erklärungen). Avatar 3, 4
 ## Weitere Ordner
 
 - `docs/` – Mapping-Excel und Master-PDFs der Avatare
+
+Hinweis: Jeder Push auf `main` wird automatisch über Netlify veröffentlicht (go.dianahemmi.info).
